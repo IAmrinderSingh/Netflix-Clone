@@ -8,17 +8,23 @@
     <title>Netflix</title>
 </head>
 <body>
-    <form action="">
-        <h1 id="signin-text">Sign In</h2>
-        <input type="email" name="" id="" placeholder="Email or phone number">
-        <input type="password" name="" id="" placeholder="Password">
-        <button>Sign In</button>
-        <div class="box">
-            <input type="checkbox" name="" id="">
-            <a href="">Need help?</a>
-        </div>
-        <h3>New to Netflix?Sign up now.</h3>
-        <h4>This page is protected by Google reCAPTCHA to ensure you're not a bot. <a href="">Learn more.</a></h4>           
-    </form>
+    <div class="wrapper-dark-background">
+        <form action="">
+            <h1 id="signin-text">Sign In</h2>
+            <input type="email" name="" id="user-email" placeholder="Email or phone number">
+            <input type="password" name="" id="user-password" placeholder="Password">
+            <button id="signin-button">Sign In</button>
+            <div class="box">
+                <div class="wrapper-rememberme">
+                    <input type="checkbox" name="rememberme" id="rememberme" checked>
+                    <label class="rememberme" for="rememberme">Remember me</label>
+                </div>
+                <a href="" id="needhelp">Need help?</a>
+            </div>
+            <h3 id="signup-text">New to Netflix?<a id="signup" href="">Sign up now.</a></h1>
+            <h3 id="captcha-text">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a id="learnmore" href="">Learn more.</a></h3>           
+        </form>
+    </div>
+    
 </body>
 </html>
