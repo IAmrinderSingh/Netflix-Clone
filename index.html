@@ -12,20 +12,34 @@
     <div id="wrapper-dark-background">
         <img src="netflixlogo-text.svg" alt="netflixlogo" id="netflixlogo-text">
         <form action="">
-            <h1 id="signin-text">Sign In</h2>
-            <input type="email" name="" id="user-email" placeholder="Email or phone number">
-            <input type="password" name="" id="user-password" placeholder="Password">
-            <button id="signin-button">Sign In</button>
-            <div class="box">
-                <div class="wrapper-rememberme">
-                    <input type="checkbox" name="rememberme" id="rememberme" checked>
-                    <label class="rememberme" for="rememberme">Remember me</label>
+            <div class="wrapper-login-form-main">
+                <div class="wrapper-login-form">
+                    <h1 id="signin-text">Sign In</h2>
+                    <div class="EmailPhoneInput-login-input">
+                        <input type="text" name="" id="user-email">
+                        <label for="user-email">Email or Phone number</label>
+                    </div>
+                    <div class="PasswordInput-login-input">
+                        <input type="password" name="" id="user-password">
+                        <label for="user-password">Password</label>
+                    </div>
+                    <button id="signin-button">Sign In</button>
                 </div>
-                <a href="" id="needhelp">Need help?</a>
+                <div class="container">
+                    <div class="wrapper-rememberme">
+                        <input type="checkbox" name="rememberme" id="rememberme" checked>
+                        <label class="rememberme" for="rememberme">Remember me</label>
+                    </div>
+                    <a href="" id="needhelp">Need help?</a>
+                </div>
             </div>
-            <h3 id="signup-text">New to Netflix?<a id="signup" href="">Sign up now.</a></h1>
-            <h3 id="captcha-text">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a id="learnmore" href="">Learn more.</a></h3>           
+            <div class="signup-form-other">
+                <h3 id="signup-text">New to Netflix?<a id="signup" href="">Sign up now.</a></h3>
+                <div class="reCAPTCHA-text">
+                    <h3 id="captcha-text">This page is protected by Google reCAPTCHA to ensure you're not a bot. <a id="learnmore" href="">Learn more.</a></h3>           
+                </div>
+            </div>
         </form>
-    </div>
+    </div>       
 </body>
 </html>

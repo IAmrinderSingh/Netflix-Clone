@@ -37,37 +37,56 @@ body{
 }
 form{
     background-color:rgb(0,0,0,0.7);
-    width: 330px;
+    width: 450px;
+    height: 660px;
     margin: auto;
-    padding: 60px 60px 100px 60px;
+    padding: 60px 68px 40px 68px;
     border-radius: 5px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.wrapper-login-form-main{
+    width: 314px;
+    height: 380px;
 }
 
 #signin-text{
     color: white;
     font-size: 32px;
+    margin-bottom: 28px;
+}
+
+.EmailPhoneInput-login-input,.PasswordInput-login-input{
+    padding: 0px 0px 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.EmailPhoneInput-login-input>label,.PasswordInput-login-input>label{
+    position: absolute;
+    font-size: 16px;
+    color: #8c8c8c;
+    transform: translateX(20px);
 }
 
 #user-email,#user-password{
     background-color: #333333;
-    padding: 15px;
+    padding: 16px 20px 0px;
+    height: calc(50px - 16px);
     border: none;
     border-radius: 5px;
-    width: calc(100% - 30px);
-    /* min-width: 100%; */
-}
-#user-email,#signin-button{
-    margin-top: 25px;
-}
-#user-password{
-    margin-top: 12px;
+    width: calc(100% - 40px);
 }
 
 #signin-button{
     background-color: #e50914;
-    color: #fffcec;
+    font-size: 16px;
+    margin: 24px 0px 12px;
+    color: white;
     width: 100%;
-    padding: 15px;
+    padding: 16px;
     border:none;
     border-radius: 5px;
 }
@@ -77,11 +96,10 @@ form{
     font-size: 50%;
 }
 
-.box{
+.container{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 12px;
 }
 
 .wrapper-rememberme{
@@ -89,23 +107,30 @@ form{
     align-items: center;
     justify-content: center;
 }
-
-#signup-text{
-    color: var(--LIGHTGRAY);
-    font-size: 55%;
-    margin-top: 72px;
+#rememberme{
+    margin-right: 5px;
 }
-
+#signup-text{
+    color: #737373;
+    font-size: 16px;
+    margin-top: 16px;
+}
+.signup-form-other{
+    height: 180px;
+    width: 100%;
+}
 #signup{
     color: white;
     text-decoration: none;
-   
+    font-weight: 600;
+    margin-left: 2px;
 }
-
+.reCAPTCHA-text{
+    margin-top: 11px;
+}
 #captcha-text{
-    color: var(--LIGHTGRAY);
-    font-size: 50%;
-    margin-top: 12px;
+    color: #8c8c8c;
+    font-size: 13px;
 }
 
 #learnmore{
