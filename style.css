@@ -5,18 +5,20 @@
 }
 
 :root{
-    --LIGHTGRAY:#a7a690;
+    --LIGHTGRAY:#737373;
+    --DARKBACKGROUND:rgb(0,0,0,0.7);
+    --BLACKCOLOR:#000000;   
 }
 
 body{
-    background-color: black;
+    background-color: var(--BLACKCOLOR);
     font-family:Helvetica Neue, sans-serif;
     font-weight: 400;
     font-size: 24px;
 }
 #wrapper-dark-background{
     position: relative;
-    height: 115vh;
+    height: 119vh;
     width: 100%;
 }
 #netflixlogo-text{
@@ -36,7 +38,7 @@ body{
     z-index: -1;
 }
 form{
-    background-color:rgb(0,0,0,0.7);
+    background-color:var(--DARKBACKGROUND);
     width: 450px;
     height: 660px;
     margin: auto;
@@ -53,7 +55,7 @@ form{
 }
 
 #signin-text{
-    color: white;
+    color: #ffffff;
     font-size: 32px;
     margin-bottom: 28px;
 }
@@ -68,7 +70,7 @@ form{
 .EmailPhoneInput-login-input>label,.PasswordInput-login-input>label{
     position: absolute;
     font-size: 16px;
-    color: #8c8c8c;
+    color: var(--LIGHTGRAY);
     transform: translateX(20px);
 }
 
@@ -112,7 +114,7 @@ form{
     margin-right: 5px;
 }
 #signup-text{
-    color: #737373;
+    color: var(--LIGHTGRAY);
     font-size: 16px;
     margin-top: 16px;
 }
@@ -130,7 +132,7 @@ form{
     margin-top: 11px;
 }
 #captcha-text{
-    color: #8c8c8c;
+    color: var(--LIGHTGRAY);
     font-size: 13px;
 }
 
@@ -142,14 +144,14 @@ form{
 footer{
     padding: 0px 0px 20px;
     bottom: 0;
-    background-color:rgb(0,0,0,0.7);
+    background-color:var(--DARKBACKGROUND);
 }
 
 .site-footer{
     padding: 30px 0px;
     width: 50%;
     margin: auto;
-    color: #737373;
+    color: var(--LIGHTGRAY);
 }
 
 #footer-top{
@@ -158,14 +160,14 @@ footer{
 }
 
 #helpline-no{
-    color: #737373;
+    color: var(--LIGHTGRAY);
     text-decoration: none;
 }
 
 #item-list{
     display:grid;
     grid-template-columns: auto auto auto auto;
-    color: #737373;
+    color: var(--LIGHTGRAY);
     font-size: 13px;
     margin: auto;
     width: 100%;
@@ -175,4 +177,18 @@ footer{
 .footer-link-item{
     margin: 0px 0px 16px;
     padding: 0px 12px 0px 0px;
+}
+
+.lang-switcher{
+    position: relative;
+    width: 100%;
+    margin: 20px 0px 0px;
+}
+
+#lang-selecter{
+    padding: 12px 26px 12px 50px;
+    position: relative;
+    background-color: var(--DARKBACKGROUND);
+    color: var(--LIGHTGRAY);
+    font-size: 13px;
 }
